@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "name": "(Windows) Launch",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/test-runner.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "sourceFileMap": {
+        "/rustc/17067e9ac6d7ecb70e50f92c1944e545188d2359": "${env:USERPROFILE}/.rustup/toolchains/1.87.0-x86_64-pc-windows-msvc/lib/rustlib/src/rust"
+      },
+      "symbolOptions": {
+        "searchMicrosoftSymbolServer": true
+      },
+      "environment": [
+        {
+          "name": "RUST_BACKTRACE",
+          "value": "short"
+        }
+      ]
+    }
+  ]
+}
